@@ -1,0 +1,15 @@
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<zk>
+	<window title="List Event" border="normal" apply="${eventListComposer}">
+		<vlayout>
+			<grid id="gdListEvent">
+				<columns>
+					<column label="ID" width="40px" align="center" />
+					<column label="Summary" width="200px" />
+					<column label="Priority" width="80px" align="center" />
+					<column label="Date" width="100px" align="center" />
+				</columns>
+			</grid>
+		</vlayout>
+	</window>
+</zk>
