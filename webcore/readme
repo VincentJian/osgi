@@ -1,0 +1,17 @@
+If you want to use Eclipse Virgo instead of SpringDM.
+1. Modify /WEB-INF/web.xml from
+<context-param>
+	<param-name>contextClass</param-name>
+	<param-value>org.springframework.osgi.web.context.support.OsgiBundleXmlWebApplicationContext</param-value>
+</context-param>
+To
+<context-param>
+	<param-name>contextClass</param-name>
+	<param-value>org.eclipse.virgo.web.dm.ServerOsgiBundleXmlWebApplicationContext</param-value>
+</context-param>
+
+2. Change Import-Package in MANIFEST.MF:
+From
+	org.springframework.osgi.web.context.support
+To
+	org.eclipse.virgo.web.dm
